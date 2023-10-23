@@ -20,7 +20,7 @@ func LoadConfig() (*conf, error) {
 
 	viper.SetConfigName(".env")
 	viper.SetConfigType("env")
-	viper.AddConfigPath("./cmd")
+	viper.AddConfigPath(".")
 	viper.AutomaticEnv()
 
 	err := viper.ReadInConfig()
